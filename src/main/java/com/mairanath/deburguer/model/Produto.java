@@ -7,28 +7,20 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder(toBuilder = true)
-@Table(name = "tb_produtos")
+@Table(name = "tb_produto")
 @Entity
-public class Produtos implements Serializable {
+public class Produto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "nome_produto")
     private String nome;
-
-    private Set<Pedido> pedidos;
-
-
-
-
-
-
 
 }

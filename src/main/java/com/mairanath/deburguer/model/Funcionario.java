@@ -20,11 +20,12 @@ public class Funcionario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "nome_funcionario")
     private String nome;
 
     private String cpf;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
     private Set<Email> emails;
 
 

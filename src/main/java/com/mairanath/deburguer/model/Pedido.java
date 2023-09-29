@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
+
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,8 +23,12 @@ public class Pedido implements Serializable {
 
     private String descricao;
 
-    private Produtos produtos;
+    @ManyToOne(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
+    @JoinColumn(name = "produtos_descricao")
+    private Produto produtos;
 
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
     private Cliente clientes;
 
 
