@@ -13,19 +13,22 @@ import java.util.Set;
 @NoArgsConstructor
 @Data
 @Builder(toBuilder = true)
-@Table(name = "tb_funcionario")
+@Table(name = "tb_produtos")
 @Entity
-public class Funcionario implements Serializable {
+public class Produtos implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nome;
 
-    private String cpf;
+    private Set<Pedido> pedidos;
 
-    @ManyToOne
-    private Set<Email> emails;
+
+
+
+
 
 
 }
