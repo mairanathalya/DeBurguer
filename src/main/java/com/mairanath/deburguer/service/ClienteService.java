@@ -1,3 +1,4 @@
+
 package service;
 
 import Exceptions.ClienteJaCadastradoException;
@@ -61,4 +62,12 @@ public class ClienteService {
                 clienteAtualizar.setPedidos(cliente.getPedidos());
             return this.clienteRepository.save(clienteAtualizar);
         }
+=======
+package com.mairanath.deburguer.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ClienteService {
+
 }

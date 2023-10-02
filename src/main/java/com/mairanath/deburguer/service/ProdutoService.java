@@ -1,3 +1,4 @@
+
 package service;
 
 import Exceptions.PedidoJaCadastradoException;
@@ -59,3 +60,11 @@ public class ProdutoService {
     }
 }
 
+=======
+package com.mairanath.deburguer.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProdutoService {
+}

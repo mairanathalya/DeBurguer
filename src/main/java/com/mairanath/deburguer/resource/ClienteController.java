@@ -1,3 +1,4 @@
+
 package resource;
 import Exceptions.ClienteJaCadastradoException;
 import Exceptions.ClienteNotFoundException;
@@ -49,3 +50,16 @@ import java.util.List;
         }
 
     }
+
+package com.mairanath.deburguer.resource;
+
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/cliente")
+public class ClienteController {
+
+}
+

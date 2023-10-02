@@ -1,3 +1,4 @@
+
 package resource;
 
 import Exceptions.PedidoJaCadastradoException;
@@ -12,9 +13,16 @@ import service.PedidoService;
 import java.util.List;
 import java.util.Optional;
 
+package com.mairanath.deburguer.resource;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
 @RestController
 @RequestMapping("/pedido")
 public class PedidoController {
+
     private final PedidoService pedidoService;
 
     @Autowired
@@ -48,3 +56,6 @@ public class PedidoController {
     }
 
 }
+
+}
+

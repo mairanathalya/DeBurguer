@@ -1,3 +1,4 @@
+
 package service;
 
 import Exceptions.PedidoJaCadastradoException;
@@ -59,3 +60,12 @@ public class PedidoService {
         return this.pedidoRepository.save(pedidoAtualizar);
     }
     }
+=======
+package com.mairanath.deburguer.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PedidoService {
+}
+

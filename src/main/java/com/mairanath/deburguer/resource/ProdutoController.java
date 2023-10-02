@@ -1,3 +1,4 @@
+
 package resource;
 
 
@@ -11,10 +12,17 @@ import org.springframework.web.bind.annotation.*;
 import service.ProdutoService;
 
 import java.util.List;
+=======
+package com.mairanath.deburguer.resource;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 
 @RestController
 @RequestMapping("/produto")
 public class ProdutoController {
+
     private final ProdutoService produtoService;
 
     @Autowired
@@ -44,5 +52,6 @@ public class ProdutoController {
     public Produto atualizaProduto(@Validated @RequestBody Produto produto, @PathVariable Long id) throws ProdutoNotFoundException {
         return this.produtoService.atualizaProduto(produto, id);
     }
+
 
 }

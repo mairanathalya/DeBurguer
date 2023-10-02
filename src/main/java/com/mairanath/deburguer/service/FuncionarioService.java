@@ -1,3 +1,4 @@
+
 package service;
 
 import Exceptions.ClienteJaCadastradoException;
@@ -60,4 +61,12 @@ public class FuncionarioService {
             funcionarioAtualizar.setEmails(funcionario.getEmails());
         return this.funcionarioRepository.save(funcionarioAtualizar);
     }
+=======
+package com.mairanath.deburguer.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FuncionarioService {
+
 }
